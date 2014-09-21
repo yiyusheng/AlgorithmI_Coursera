@@ -5,5 +5,5 @@
 # Last edited: September 18, 2011
 # *************************************************
 
-jar=~/algs4/drjava.jar
+jar=~/AlgorithmI_Coursera/algs4/drjava.jar
 java -jar ${jar}

@@ -11,7 +11,7 @@
 FINDBUGS=findbugs-?.?.?
 
 # This must match the specified install directory
-INSTALL=~/algs4
+INSTALL=~/AlgorithmI_Coursera/algs4
 
 # Sets the paths to arrays of matching checkstyle jar and xml files
 jar=(${INSTALL}/${FINDBUGS}/lib/findbugs.jar)
