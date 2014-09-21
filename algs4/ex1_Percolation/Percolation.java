@@ -1,10 +1,10 @@
 //import home.yorkyi.AlgorithmI_Coursera.algs4.algs4.QuickFindUF;
 public class Percolation {
- int len;
- int[][] state;
- QuickFindUF p;
+ private int len;
+ private int[][] state;
+ private QuickFindUF p;
 
-    public Percolation(int N) throws Exception
+    public Percolation(int N)
    {             // create N-by-N grid, with all sites blocked
   if (N<=0) {
    throw new IllegalArgumentException(); 
