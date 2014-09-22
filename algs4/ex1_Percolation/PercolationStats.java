@@ -8,12 +8,13 @@ public class PercolationStats {
      arraySta = new double[T];
      ipt = T;
      int[] tag = new int[N*N];
+     Percolation[] pset = new Percolation[T];
      for (int i = 0; i < N*N; i++)
        tag[i] = i;
      for (int i = 0; i < T; i++) 
      {
        int [] ctag = tag;
-       Percolation p = new Percolation(N);
+       pset[i] = new Percolation(N);
        StdRandom.setSeed(i + 89757);
        StdRandom.shuffle(ctag);
        int j;
@@ -22,10 +23,12 @@ public class PercolationStats {
          int cr = ctag[j];
          int crow = cr/N+1;
          int ccolumn = cr % N+1;
-         p.open(crow, ccolumn);
-         if (p.percolates())
+         pset[i] .open(crow, ccolumn);
+         //System.out.println(cr);
+         if (pset[i] .percolates())
            break;
        }
+       //System.out.println("fgx__________________________");
        double jj = j;
        arraySta[i] = (jj+1)/N/N;
      }
